@@ -1,0 +1,46 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "3A1099B1-3",
+    "build_number": 3,
+    "build_time": 1626775939295,
+    "release": false
+  },
+  "encryptLevel": 1,
+  "useFeatures": [],
+  "icon": "icons/logo_icon.png",
+  "launchConfig": {
+    "displaySplash": false,
+    "hideLogs": false,
+    "splashIcon": "icons/splash_icon.png",
+    "splashText": "Renegade Project",
+    "stableMode": false
+  },
+  "main": "main.js",
+  "name": "Renegade Project",
+  "optimization": {
+    "removeOpenCv": false,
+    "unusedResources": false
+  },
+  "packageName": "com.xingyujie.renegade.manager",
+  "publish": {
+    "category": "",
+    "details": "",
+    "maxAutoJsVersion": 0,
+    "maxProVersion": 0,
+    "minAutoJsVersion": 0,
+    "minProVersion": 0,
+    "minSdkVersion": 0,
+    "permissions": [],
+    "summary": "",
+    "tags": []
+  },
+  "scripts": {},
+  "signingConfig": {
+    "alias": "xingyujie",
+    "keystore": "/storage/emulated/0/脚本/.keystore/renegade.jks",
+    "uuid": "daa38f1c-6f36-425c-9b85-894c886dd01c"
+  },
+  "versionCode": 100,
+  "versionName": "1.0.0"
+}
