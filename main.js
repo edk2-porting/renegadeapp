@@ -24,77 +24,8 @@ $ui.layout(
    
             </frame>
             <frame id="notifications">
-            <text textSize="20sp" w="*" gravity="center" textStyle="bold" >Windows设备支持状态
-Xiaomi MIX 2S (polaris)
-
-USB和触摸屏不工作
-
-Xiaomi MIX 3 (perseus)
-
-USB正常工作
-
-Xiaomi MI 8 (dipper)
-
-USB和触摸屏不工作
-
-Xiaomi PocoPhone F1 (beryllium)
-
-USB正常工作
-
-OnePlus 6 (enchilada)
-
-USB正常工作
-
-触摸屏正常工作
-
-OnePlus 6T (fajita)
-
-USB正常工作
-
-触摸屏正常工作
-
-Nubia X (nx616j)
-
-USB和触摸屏不工作
-
-Meizu 16th (m1882)
-
-USB正常工作
-
-显示Framebuffer非常慢 (大约1fps)
-
-BlackShark One (skr-a0)
-
-USB正常工作
-
-锤子坚果R1 (trident)
-
-USB正常工作
-
-LG G7 (judyln)
-
-USB正常工作
-
-由于watchdog问题，1分钟内自动重启
-
-Samsung Galaxy S9+ (star2qltechn)
-
-USB需外接供电才能正常工作
-
-UFS不工作
-
-如果你在磁盘管理中使其强制联机，你的UFS将会被擦除
-
-Google pixel3 (Blueline)
-
-USB正常工作
-
-UFS不工作
-
-Oppo Findx (CPH1871)
-
-USB正常工作</text>
-               
+// here munu
+            <webview id="deviceinfo" h="600" margin="0 16"/>
             </frame>
         </viewpager>
         <bottomnaviagtion id="navigation" bg="#ffffff" />
@@ -125,9 +56,6 @@ $ui.emitter.on("create_options_menu", menu => {
     menu.add("重启");
     menu.add("重启到Recovery")
     menu.add("重启到Bootloader")
-    menu.add("一加6T专用刷入教程")
-    menu.add("小米8专用刷入教程")
-    menu.add("mix2s专用刷入教程")
     menu.add("通用845刷入教程")
     menu.add("关于")
 });
@@ -204,3 +132,4 @@ function buildMenuItem(menu, title, icon) {
     return menuItem;
 }
 ui.webflash.loadUrl("https://forum.renegade-project.org/")
+ui.deviceinfo.loadUrl("https://renegade-project.org/#/zh/windows/state-frame.html")
