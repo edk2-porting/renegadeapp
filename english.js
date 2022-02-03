@@ -24,77 +24,8 @@
    
              </frame>
              <frame id="notifications">
-             <text textSize="20sp" w="*" gravity="center" textStyle="bold" >Windows device support status
- Xiaomi MIX 2S (polaris)
-
- USB and touchscreen not working
-
- Xiaomi MIX 3 (perseus)
-
- USB works fine
-
- Xiaomi MI 8 (dipper)
-
- USB and touchscreen not working
-
- Xiaomi PocoPhone F1 (beryllium)
-
- USB works fine
-
- OnePlus 6 (enchilada)
-
- USB works fine
-
- The touch screen works fine
-
- OnePlus 6T (fajita)
-
- USB works fine
-
- The touch screen works fine
-
- Nubia X (nx616j)
-
- USB and touchscreen not working
-
- Meizu 16th (m1882)
-
- USB works fine
-
- Displaying Framebuffer is very slow (about 1fps)
-
- BlackShark One (skr-a0)
-
- USB works fine
-
- Hammer Nut R1 (trident)
-
- USB works fine
-
- LG G7 (judyln)
-
- USB works fine
-
- Automatic restart in 1 minute due to watchdog issue
-
- Samsung Galaxy S9+ (star2qltechn)
-
- USB needs external power supply to work properly
-
- UFS not working
-
- If you force it online in Disk Management, your UFS will be wiped
-
- Google pixel3 (Blueline)
-
- USB works fine
-
- UFS not working
-
- Oppo Findx (CPH1871)
-
- USB works fine</text>
-               
+ // here munu
+             <webview id="deviceinfo" h="600" margin="0 16"/>
              </frame>
          </viewpager>
          <bottomnaviagtion id="navigation" bg="#ffffff" />
@@ -125,9 +56,6 @@
      menu.add("Restart");
      menu.add("Reboot to Recovery")
      menu.add("Reboot to Bootloader")
-     menu.add("One Plus 6T dedicated flashing tutorial")
-     menu.add("Brushing tutorial for Xiaomi Mi 8")
-     menu.add("mix2s dedicated brushing tutorial")
      menu.add("General 845 Flashing Tutorial")
      menu.add("About")
  });
@@ -204,3 +132,4 @@
      return menuItem;
  }
  ui.webflash.loadUrl("https://forum.renegade-project.org/")
+ ui.deviceinfo.loadUrl("https://renegade-project.org/#/en/windows/state-frame.html")
